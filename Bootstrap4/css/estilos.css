@@ -1,0 +1,81 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: rgba(0,0,155,.5);
+    overflow-x: hidden;
+}
+
+nav img{
+    height: 150px;
+    width: 150px;
+}
+
+.icon{
+    font-size: 2rem;
+    color: black;
+}
+
+.contenido, .comentario, .busqueda{
+    background: rgba(0,122,155,.5);
+}
+
+.imagen{
+    background: url('http://www.billboard.com.ar/images/galleries/2830/1da96712df400c3ba0ca16bc084eb80d_650x430.png') no-repeat;
+    background-size: cover;
+}
+
+.imagen1{
+    background: url('http://www.dooddot.com/wp-content/uploads/2013/08/steve-vai2.png') no-repeat;
+    background-size: cover;
+}
+
+.content{
+    width: 100%;
+}
+
+@media only screen and (min-width:576px) and (max-width:991px){
+    
+    .imagen, .imagen1 {
+        height: 250px;
+    }
+}
+
+@media only screen and (min-width:0px) and (max-width:575px){
+
+    .menu{
+        flex-direction: column;
+    }
+
+    .icon{
+        font-size: 2rem
+    }
+
+    .links{
+        margin-left: .6rem;
+    }
+
+    .links a{
+        margin-top: .5em;
+    }
+
+    .contenedor{
+        flex-direction: column;
+    }
+
+    .contenido{
+        flex-direction: column;
+    }
+
+    .imagen, .imagen1 {
+        height: 250px;
+    }
+
+    .busqueda{
+        display: none !important;
+    }
+
+}

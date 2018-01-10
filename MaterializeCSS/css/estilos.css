@@ -1,0 +1,138 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    background: url('http://www.hdfondos.org/file/9315/728x410/16:9/montanas-con-cumbres-nevadas_1523606751.jpg') no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    overflow-x: hidden;
+}
+
+.bloque{
+    height: 160px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -100;
+}
+
+.nav-menu, .redes{
+    background: transparent !important;
+}
+
+.menu-resp{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.redes-sociales{
+    border: none !important;
+}
+
+.contenedor{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.banner{
+    background: rgba(0,0,0,.5);
+}
+
+.perfil{
+    margin-right: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.comentario{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.icon{
+    font-size: 3rem;
+}
+
+.image img{
+    padding: 40px 0;
+    cursor: pointer;
+}
+
+.image1 img{
+    padding: 20px 0 5px 0;
+    cursor: pointer;
+}
+
+.contenido, .perfil{
+    background: rgba(255,255,255,.5);
+}
+
+.perfil-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@media only screen and (min-width:601px) and (max-width:991px){
+
+    .bloque{
+        height: 280px;
+    }
+
+    .redes-sociales{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .redes{
+        border: none !important;
+    }
+
+    .contenedor{
+        flex-direction: column;
+    }
+
+    .perfil{
+        margin-top: 10px;
+        margin-right: 0px;
+    }
+
+}
+
+@media only screen and (min-width:0px) and (max-width:600px){
+    
+    .bloque{
+        height: 250px;
+    }
+
+    .redes-sociales{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .redes{
+        border: none !important;
+    }
+
+    .contenedor{
+        flex-direction: column;
+    }
+
+    .perfil{
+        margin-top: 10px;
+        margin-right: 0px;
+    }
+
+}

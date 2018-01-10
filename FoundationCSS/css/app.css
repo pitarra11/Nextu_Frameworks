@@ -1,0 +1,122 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: url('http://flashwallpapers.com/wp-content/uploads/2015/10/desk-restaurant-wine-glasses.jpg') no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    overflow-x: hidden;
+}
+
+.menu-img{
+    background: rgba(43,166,203,.7);
+    padding: .5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.menu-img h1{
+    padding-right: 1em;
+}
+
+.menu-img h1 img{
+    height: 110px;
+    width: 110px;
+}
+
+.lateral, .contenido{
+    background: rgba(233,233,233,.7);
+}
+
+.busqueda{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.links, .historial, .busqueda, .favorito,
+.photo, .articulo{
+    padding: .5em;
+}
+
+.links a, .historial p{
+    font-size: 1.5rem;
+    color: #000;
+    font-weight: bold;
+}
+
+.favorito{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.photos{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.photo{
+    cursor: pointer;
+}
+
+.photo img{
+    height: 100px;
+    width: 200px;
+}
+
+.historial{
+    display: flex;
+    flex-direction: column;
+}
+
+.contenido{
+    background: rgba(0,0,0,.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.articulo{
+    background: rgba(233,233,233,.7);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.articulo:last-child{
+    border-top: 1px solid #000;
+}
+
+.articulo ol{
+    list-style: decimal;
+    padding: 2rem;
+}
+
+.pasos{
+    padding-top: 1rem;
+    font-size: 2rem;
+}
+
+.comentario{
+    display: flex;
+    flex-direction: row;
+    padding: .5rem;
+}
+
+.icon{
+    font-size: 2.5rem;
+}
+
+.comentario-text{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
